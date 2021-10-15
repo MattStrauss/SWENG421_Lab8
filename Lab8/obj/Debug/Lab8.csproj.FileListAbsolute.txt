@@ -1,0 +1,6 @@
+C:\Users\moond\Source\Repos\SWENG421_Lab8\Lab8\obj\Debug\Lab8.csproj.AssemblyReference.cache
+C:\Users\moond\Source\Repos\SWENG421_Lab8\Lab8\obj\Debug\Lab8.csproj.CoreCompileInputs.cache
+C:\Users\moond\Source\Repos\SWENG421_Lab8\Lab8\bin\Debug\Lab8.exe
+C:\Users\moond\Source\Repos\SWENG421_Lab8\Lab8\bin\Debug\Lab8.pdb
+C:\Users\moond\Source\Repos\SWENG421_Lab8\Lab8\obj\Debug\Lab8.exe
+C:\Users\moond\Source\Repos\SWENG421_Lab8\Lab8\obj\Debug\Lab8.pdb
