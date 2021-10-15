@@ -1,6 +1,6 @@
-using System;
-using Lab8.People;
 using Lab8.Devices;
+using Lab8.People;
+using System;
 namespace Lab8
 {
     internal class Program

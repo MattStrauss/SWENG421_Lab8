@@ -1,5 +1,4 @@
-﻿using System;
-using Lab8.Devices;
+﻿using Lab8.Devices;
 
 namespace Lab8.People
 {

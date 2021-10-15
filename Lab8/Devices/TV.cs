@@ -5,7 +5,7 @@ namespace Lab8.Devices
 {
     public class TV
     {
-        public Dictionary<string, int> TVs = new Dictionary<string, int>() { {"Smart_TV", 200 }, {"UltraHD_TV", 300 }, { "Vizio_TV", 250 }, { "Vizio_Smart_TV", 350 }, 
+        public Dictionary<string, int> TVs = new Dictionary<string, int>() { {"Smart_TV", 200 }, {"UltraHD_TV", 300 }, { "Vizio_TV", 250 }, { "Vizio_Smart_TV", 350 },
             { "Vizio_UltraHD_TV", 450 }, { "Sony_TV", 280 }, { "Sony_Smart_TV", 380 }, { "Sony_UltraHD_TV", 480 } };
 
         private string _name;
@@ -27,9 +27,11 @@ namespace Lab8.Devices
 
         string _GetType()
         {
-            if (this.GetType().Name.Contains("Smart")) {
+            if (this.GetType().Name.Contains("Smart"))
+            {
                 return "Smart";
-            }else if (this.GetType().Name.Contains("Ultra"))
+            }
+            else if (this.GetType().Name.Contains("Ultra"))
             {
                 return "UltraHD";
             }
@@ -53,18 +55,19 @@ namespace Lab8.Devices
             while (numerator.MoveNext())
             {
                 difference = budget - numerator.Current.Value;
-                if(difference < min && difference >= 0)
+                if (difference < min && difference >= 0)
                 {
                     min = difference;
                     budgetTV = numerator.Current.Key;
                 }
             }
-            if(min == int.MaxValue)
+            if (min == int.MaxValue)
             {
                 Console.WriteLine("Budget is too low to buy any TV");
                 return null;
             }
-            switch (budgetTV) {
+            switch (budgetTV)
+            {
                 case ("Smart_TV"):
                     return new SmartTV();
                 case ("UltraHD_TV"):
@@ -97,7 +100,7 @@ namespace Lab8.Devices
             string name = "Smart_TV";
             TVs.TryGetValue(name, out price);
             SetPrice(price);
-            SetName(name); 
+            SetName(name);
         }
 
         internal double GetPowerUsage()
@@ -114,12 +117,12 @@ namespace Lab8.Devices
             string name = "UltraHD_TV";
             TVs.TryGetValue(name, out price);
             SetPrice(price);
-            SetName(name); 
+            SetName(name);
         }
     }
 
     public interface ITV
-    {    }
+    { }
 
     public class ProxyTV : TV, ITV
     {
@@ -172,7 +175,7 @@ namespace Lab8.Devices
             string name = "Sony_TV";
             TVs.TryGetValue(name, out price);
             SetPrice(price);
-            SetName(name); 
+            SetName(name);
         }
     }
 
@@ -189,7 +192,7 @@ namespace Lab8.Devices
             string name = "Vizio_Smart_TV";
             TVs.TryGetValue(name, out price);
             SetPrice(price);
-            SetName(name); 
+            SetName(name);
         }
     }
 
