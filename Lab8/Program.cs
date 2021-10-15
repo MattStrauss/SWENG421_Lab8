@@ -1,6 +1,7 @@
 using Lab8.Devices;
 using Lab8.People;
 using System;
+
 namespace Lab8
 {
     internal class Program
